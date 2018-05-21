@@ -1,0 +1,14 @@
+
+/*  Footer style     */
+.footer-wrapper {
+    padding-top: 3%;
+}
+
+.footer-center-div{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.all-social-logos img {
+    width: 60px;
+}
