@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/button.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/icon.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"></link>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
@@ -24,7 +26,7 @@
 
       * {
         box-sizing: border-box;
-        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Raleway', sans-serif;
       }
       ::-webkit-scrollbar {
         display: none;
@@ -39,11 +41,12 @@
 
     #child2 {
         position: absolute;
-        top: 50%;
-        left: 43.59%;
+        top: 65%;
+        left: 40%;
         padding: 19px 25px;
         padding-left:28px;
         font-size: 1.1em;
+        font-family: font-family: 'Roboto Slab', serif;;
       }
 
       @media only screen and (max-width: 1000px) {
@@ -54,11 +57,12 @@
             padding: 19px 25px;
             padding-left:28px;
             font-size: 1.1em;
+            font-family: font-family: 'Roboto Slab', serif;;
           }
       }
       #s2h{
         margin: auto;
-        width: 40.5%;
+        width: 55.6%;
         /* border-bottom: 2px grey solid; */
         padding: 10px;
         box-shadow: 0px 24px 3px -24px black;
@@ -74,6 +78,9 @@
         font-weight: normal;
       }
 
+      .okokok{
+        margin: none;
+      }
   </style>
   <body>
         <!-- <header>
@@ -92,7 +99,7 @@
 
           <div class="section_1" >
                 <img src="supp/background.png" height="600px" width="100%" id="parent2">
-                <button class="ui inverted black button" id="child2"><span class="diff_font2">Need of hour </span><i class="arrow circle down icon"></i></button>
+                <button class="ui inverted teal basic button" id="child2"><span class="diff_font2">Need of hour </span><i class="arrow circle down icon"></i></button>
           </div>
 
           <div class="section_2 container">
@@ -107,25 +114,55 @@
                 </div>
           </div>
 
+          <div class="section_5">
 
-          <div class="footer-wrapper #424242 grey darken-3">
-            <footer>
-            <div class="footer-link-container">
-              <div class="social-links-1">
-                <a href="https://www.instagram.com/acmvitu/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" target="_blank"><img src="img/Insta_f.png" alt="ACM VIT"></a>
+                    <div class="ui main text container segment">
+                          <div class="ui huge header">
+                              Contact Us
+                          </div>
+                          <form class="ui form" action="#" method="POST">
+                              <div class="field">
+                                  <label>Name</label>
+                                  <input type="text" placeholder="Name" name="form[name]" class="okokok" style="width: 95%">
+                              </div>
+                              <div class="field">
+                                  <label>Email</label>
+                                   <input type="text" placeholder="Email" name="form[email]" class="okokok"  style="width: 95%">
+                              </div>
+                              <div class="field">
+                                  <label>Phone</label>
+                                   <input type="text" placeholder="Phone" name="form[phone]" class="okokok"  style="width: 95%">
+                              </div>
+                              <div class="field">
+                                  <label>Message</label>
+                                   <textarea name="form[message]"></textarea>
+                              </div>
 
-                <a href="https://www.facebook.com/ACM.VITU/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" target="_blank"><img src="img/fb_f.png" alt="ACM VIT" ></a>
+                              <input class="ui violet basic button big" type="submit">
+                          </form>
+                    </div>
 
 
-                <a href="https://twitter.com/ACM_VIT" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" target="_blank"><img src="img/tweet_f.png" alt="ACM VIT"></a>
+                    <div class="footer-wrapper #424242 grey darken-3">
+                      <footer>
+                      <div class="footer-link-container">
+                        <div class="social-links-1">
+                          <a href="https://www.instagram.com/acmvitu/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" target="_blank"><img src="img/Insta_f.png" alt="ACM VIT"></a>
 
-              </div>
-            </div>
-              <div class="footer-logo-div">
-                <img src="img/acmlogo1.png " alt="ACM-VIT" id="acm-footer-img">
-                <img src="img/vitlogo1.png " alt="VIT" style="float: right;" id="vit-footer-img" >
-              </div>
-            </footer>
+                          <a href="https://www.facebook.com/ACM.VITU/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" target="_blank"><img src="img/fb_f.png" alt="ACM VIT" ></a>
+
+
+                          <a href="https://twitter.com/ACM_VIT" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" target="_blank"><img src="img/tweet_f.png" alt="ACM VIT"></a>
+
+                        </div>
+                      </div>
+                        <div class="footer-logo-div">
+                          <img src="img/acmlogo1.png " alt="ACM-VIT" id="acm-footer-img" class="wow zoomIn">
+                          <img src="img/vitlogo1.png " alt="VIT" style="float: right;" id="vit-footer-img" class="wow zoomIn">
+                        </div>
+                      </footer>
+                    </div>
+
           </div>
 
   </body>
