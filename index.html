@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html style="margin:none" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"></link>
-    <!--BS3-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width;initial-scale=1.0">
+  <!--BS3-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <!--Slick-->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <!--NATIVES-->
+  <link rel="stylesheet" href="css/events.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="js/events.js"></script>
+  <title>CodeYourDreams</title>
+    </head>
+        <style media="screen">
+          *{
+            box-sizing: border-box;
+          }
 
-    <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+          .nav-wrapper{
+            background-color: #FFE808;
+            height: 18%;
+          }
+          .colorblue{
+            color: #0000FF;
+            font-weight: bold;
+            font-size: 13px;
+          }
+          .balanced{
+            height:65px;
+            width:59px;
+          }
+          .paddlef{
+            padding-left: 26px;
+          }
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          a.icon {
+            display: none;
+          }
+          .okok{
+              min-height: 0px;
+          }
 
-
-    <!--Slick-->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <!--NATIVES-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/FAQ.css">
-    <link rel="stylesheet" type="text/css" href="css/events.css">
-
-    <script src="js/FAQ.js"></script>
-    <script src="js/events.js"></script>
-      <!-- WOW-JS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min_.js"></script>
-    <script>new WOW().init();</script>
-
-    <title>CodeYourDreams</title>
-  </head>
+        </style>
   <body>
-      <div class="section_1" >
-            <img src="img/background.png" height="600px" width="100%" id="parent2">
-            <button class="ui inverted teal basic button" id="child2"><span class="diff_font2">Need of hour </span><i class="arrow circle down icon"></i></button>
+    <nav>
+     <div class="nav-wrapper okok">
+       <a href="#" class="brand-logo right"><img class="balanced" src="CodeYourDreamLOGOtry[3][1].png"></a>
+       <ul id="nav-mobile" class="left hide-on-med-and-down">
+         <li><a class="colorblue paddlef" href="#">ABOUT</a></li>
+         <li><a class="colorblue" href="#">SO FAR</a></li>
+         <li><a class="colorblue" href="#">JOIN US</a></li>
+         <li><a class="colorblue" href="#">CONTACT US</a></li>
+         <li>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+           </a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+
+<div class="home">
+    <img src="home.jpg" height="607.5px" width="100%">
+</div>
+
+
+  
+
+  <div class="section_3 section container-fluid">
+    <div class="desc col-lg-10 col-md-10 col-sm-10 col-xl-10 col-12" style="margin:auto;">
+      <span class="header  animated fadeIn hvr-underline-from-center">SO FAR</span>
+      <br>
+      <br>
+      <div class="bodydesc animated fadeInUp">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
-
-      <div class="section_2 container">
-            <h1 id="s2h" class="wow zoomIn">What is Code your dreams?</h1>
-            <div class="row">
-                  <span class="col-lg-6 col-md-6 col-sm-12 diff_font wow fadeInLeft">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tempus quam pellentesque nec nam aliquam. Porttitor leo a diam sollicitudin tempor id. Id semper risus in hendrerit gravida rutrum. Phasellus egestas tellus rutrum tellus.incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </span>
-                  <span class="col-lg-6 col-md-6 col-sm-12 diff_font wow fadeInRight">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tempus quam pellentesque nec nam aliquam. Porttitor leo a diam sollicitudin tempor id. Id semper risus in hendrerit gravida rutrum. Phasellus egestas tellus rutrum tellus. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </span>
-            </div>
-
-      </div>
-
-
-
-      <div class="section_3 container">
-                <br>
-                <h4 id="SOFARHeader" class="wow zoomIn text-center">So far</h4>
-                <br>
-                <br>
-                <div class="prev">&#8249;</div>
-                <div id="eventcarousel" class="eventcarousel">
-                <div><div class="event" ><img src="" alt="Event image" class="eventimage"><p id="event1" class="eventdisplayincarousel">Event Descp in short</p></div></div>
-                <div><div class="event"><img src="" alt="Event image" class="eventimage"><p id="event2" class="eventdisplayincarousel">Event Descp in short</p></div></div>
-                <div><div class="event"><img src="" alt="Event image" class="eventimage"><p id="event3" class="eventdisplayincarousel">Event Descp in short</p></div></div>
-                <div><div class="event"><img src="" alt="Event image" class="eventimage"><p id="event4" class="eventdisplayincarousel">Event Descp in short</p></div></div>
-                <div><div class="event"><img src="" alt="Event image" class="eventimage"><p id="event5" class="eventdisplayincarousel">Event Descp in short</p></div></div>
-                <div><div class="event"><img src="" alt="Event image" class="eventimage"><p id="event6" class="eventdisplayincarousel">Event Descp in short</p></div></div>
-                </div>
-                <div class="next">&#8250;</div>
-
     </div>
-
+    <br>
+    <br>
+    <div class="animated zoomIn carousel col-lg-8 col-md-8 col-sm-10 col-xl-8 col-11" style="margin:auto;">
+      <div><div class="event"><img src="img2\ngo1.jpg" class="imgsize">
+        <div class="event2"><div class="eventheader">LOCAL ORPHANAGE VISIT</div><div class="date">10/2/18</div><div class="read" onclick="show(1)">READ MORE</div></div>
+      </div></div>
+      <div><div class="event"><img src="img2/ngo2.jpg" class="imgsize">
+        <div class="event2"><div class="eventheader">GOV. SCHOOL  VISIT</div><div class="date">30/12/17</div><div class="read" onclick="show(2)">READ MORE</div></div>
+      </div></div>
+      <div><div class="event"><img src="img2/ngo3.jpg" class="imgsize">
+        <div class="event2"><div class="eventheader">MEETING WITH NGO</div><div class="date">11/1/18</div><div class="read" onclick="show(3)">READ MORE</div></div>
+      </div></div>
+      <div><div class="event"><img src="" class="imgsize">
+        <div class="event2"><div class="eventheader">NEW ORG.</div><div class="date">DATE</div><div class="read" onclick="show(4)">READ MORE</div></div>
+      </div></div>
+      <div><div class="event"><img src="" class="imgsize">
+        <div class="event2"><div class="eventheader">EVENT</div><div class="date">DATE</div><div class="read" onclick="show(5)">READ MORE</div></div>
+      </div></div>
+      <div><div class="event"><img src="" class="imgsize">
+        <div class="event2"><div class="eventheader">EVENT</div><div class="date">DATE</div><div class="read" onclick="show(6)">READ MORE</div></div>
+      </div></div>
+    </div>
+    <br>
+    <br>
+    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 noeventinfo" style="margin:auto;"><div class="closebtn">x</div><div style="padding-top:10px;padding-left:10px; padding-bottom:10px; padding-right:10px;color:red;">No event information available. Please contact us for further inquiries.</div></div>
+    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 eventinfo" style="margin:auto;">
+    <div class="closebtn">x</div>
+    <div class="col">
       <br>
-      <br>
-      <br>
-      <div class="section_4 container text-center">
-                <h4 id="FAQHeader" class="wow zoomIn">Why Code your Dreams?</h4>
-                  <br>
-                <div class="" id="" style="width:100%;">
-                    <div class="animated fadeInUp faq" id="faq1">Lorem</div>
-                    <div class="faqans" style="" id="faqans1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <div class="animated fadeInUp faq" id="faq2">Lorem</div>
-                    <div class="faqans" style="" id="faqans2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <div class="animated fadeInUp faq" id="faq3">Lorem</div>
-                    <div class="faqans" id="faqans3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <div class="animated fadeInUp faq" id="faq4">Lorem</div>
-                    <div class="faqans" style="" id="faqans4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <div class="animated fadeInUp faq" id="faq5">Lorem</div>
-                    <div class="faqans" style="" id="faqans5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <div class="animated fadeInUp faq" id="faq6">Lorem</div>
-                    <div class="faqans" style="" id="faqans6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum.</div>
-
-                </div>
-
+      <span id="eventinfoheader"></span>
+      <div id="eventinfobody">
       </div>
+    </div>
+    <div class="col1">
+      <div style="width:100%;height:50%;"><img src="" id="eventimg1" style="width:100%;height:100%"></div>
+      <div style="width:50%;height:50%;float:left"><img src="" id="eventimg2" style="width:100%;height:100%"></div>
+      <div style="width:50%;height:50%;float:left"><img src="" id="eventimg3" style="width:100%;height:100%"></div>
+    </div>
+    </div>
+  </div>
+
+  <!-- <div class="blog">BLOG</div> -->
+    <div class="section_4 section container-fluid">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xl-10 col-12" style="margin:auto;">
+      <span class="header  animated fadeIn hvr-underline-from-center">JOIN US</span>
       <br>
       <br>
-      <div class="section_5">
-                <div class="ui main text container segment">
-                      <div class="ui huge header">
-                          Contact Us
-                      </div>
-                      <form class="ui form" action="#" method="POST">
-                          <div class="field">
-                              <label>Name</label>
-                              <input type="text" placeholder="Name" name="form[name]" class="okokok" style="width: 95%">
-                          </div>
-                          <div class="field">
-                              <label>Email</label>
-                               <input type="text" placeholder="Email" name="form[email]" class="okokok"  style="width: 95%">
-                          </div>
-                          <div class="field">
-                              <label>Phone</label>
-                               <input type="text" placeholder="Phone" name="form[phone]" class="okokok"  style="width: 95%">
-                          </div>
-                          <div class="field">
-                              <label>Message</label>
-                               <textarea name="form[message]"></textarea>
-                          </div>
-
-                          <input class="ui violet basic button big" type="submit">
-                      </form>
-                </div>
-
-
-                <div class="footer-wrapper #424242 grey darken-3" style="padding-top: 3%;">
-                  <footer>
-                  <div class="footer-link-container">
-                    <div class="social-links-1">
-                      <a href="https://www.instagram.com/acmvitu/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" target="_blank"><img src="img/Insta_f.png" alt="ACM VIT"></a>
-
-                      <a href="https://www.facebook.com/ACM.VITU/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" target="_blank"><img src="img/fb_f.png" alt="ACM VIT" ></a>
-
-
-                      <a href="https://twitter.com/ACM_VIT" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" target="_blank"><img src="img/tweet_f.png" alt="ACM VIT"></a>
-
-                    </div>
-                  </div>
-                    <div class="footer-logo-div">
-                      <img src="img/acmlogo1.png " alt="ACM-VIT" id="acm-footer-img" class="wow zoomIn">
-                      <img src="img/vitlogo1.png " alt="VIT" style="float: right;" id="vit-footer-img" class="wow zoomIn">
-                    </div>
-                  </footer>
-                </div>
-
+      <span class="heading">WHY SHOULD YOU BE A PART</span>
+      <div class="bodydesc  animated fadeInUp">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
+    </div>
+  </div>
 
+  <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   </body>
 </html>
