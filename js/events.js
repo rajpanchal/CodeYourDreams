@@ -48,14 +48,9 @@ function show(num){
   if(num<=info.length){
     $('#eventinfoheader').text(info[num-1].title);
     $('#eventinfobody').text(info[num-1].information);
-    if(screen.width<500){
-    $('.col').css('background-image','url('+info[num-1].img[0]+')');
-    $('.col').css('background-size','100% 100%');
-    }else{
     $('#eventimg1').attr("src",info[num-1].img[0]);
     $('#eventimg2').attr("src",info[num-1].img[1]);
     $('#eventimg3').attr("src",info[num-1].img[2]);
-    }
     console.log(1);
     $('.eventinfo').fadeIn();
 
