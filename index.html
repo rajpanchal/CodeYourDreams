@@ -101,11 +101,11 @@
             margin-top: 5px;
           }
           .footer{
-            margin-top: 10%;
+            margin-top: 50px;
+            padding:0;
           }
 
-          @media only screen
-          and (max-device-width: 1000px)
+          @media only screen and(max-device-width: 1000px)
           {
             .margin_middle
               {
@@ -115,6 +115,52 @@
                 margin-top: 33%;
               }
           }
+          .image{
+        width:100%;
+        height:420px;
+        object-fit: cover;
+      }
+      .gg{
+        margin-bottom:30px;
+      }
+      .contact_us_1{
+        padding-top: 5px;
+        height:420px;
+        position: relative;
+        background-color: lightgrey;
+        padding-bottom: -5px;
+      }
+      .photo{
+        background-color: blue;
+      }
+      .button_submit_cont_us{
+        position: absolute;
+        bottom:0;
+        right:0;
+      }
+      .btn_cont_us{
+        background: #0000FF;
+        padding-left: 39px;
+        padding-right: 39px;
+        border-bottom: 1.5px #FFE808 solid;
+      }
+      .form_cont{
+        height: 25.95em;
+      }
+      .photo_cont_us{
+        height:100%;
+      }
+      @media only screen and (max-width: 768px) {
+
+        .contact_us_1{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .photo_cont_us{
+        padding:0;
+      }
+
+      }
         </style>
 
   <body>
@@ -157,7 +203,7 @@
     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 noeventinfo" style="margin:auto;"><div class="closebtn">x</div><div style="padding-top:10px;padding-left:10px; padding-bottom:10px; padding-right:10px;color:red;">No event information available. Please contact us for further inquiries.</div></div>
     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 eventinfo" style="margin:auto;">
     <div class="closebtn">x</div>
-    <div class="col">
+    <div class="coll">
       <br>
       <span id="eventinfoheader"></span>
       <div id="eventinfobody">
@@ -184,10 +230,50 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <div class="contact_us container-fluid">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xl-10 col-12" style="margin:auto;">
+       <span class="animated fadeIn header hvr-underline-from-center">CONTACT US</span>
+    </div>
+    <br>
+    <br>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xl-10 col-12" style="margin:auto;">
+    <div class="contact_us_1 col-lg-6 col-md-6 col-sm-12 col-xl-6 col-12" style="float:left;">
+      <div class="container">
+          <form class="form_cont">
+            <div class="input-field gg">
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field gg">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field gg">
+                <input id="phoneno" type="text" class="validate">
+                <label for="phoneno">Phone No.</label>
+            </div>
+            <div class="input-field gg">
+                <input id="text" type="text" class="validate">
+                <label for="email">Message</label>
+            </div>
+          </form>
+      </div>
+      <br>
+      <div class="button_submit_cont_us">
+        <a class="waves-effect waves-light btn btn_cont_us" style="color:white;">SUBMIT</a>
+      </div>
+    </div>
 
+    <div class="photo_cont_us col-lg-6 col-md-6 col-sm-12 col-xl-6 col-12" style="float:left;">
+      <img src="cu.png" class="image">
+    </div>
+  </div>
+</div>
 <!-- FOOTER -->
-<div class="footer">
-  <ul class="big">
+<div class="footer container-fluid" style="height:100%">
+  <ul class="big" style="width:100%;">
     <li><a><img src="img/acmlogo1.png" height="60px" width="140px"></a></li>
     <li class="balance_acmw"><a><img src="img/C2C Theme and Logo-13 (1).png"  height="60px" width="100px"> </a></li>
 
@@ -205,9 +291,7 @@
   </ul>
 
 </div>
-
-
-  <!-- Compiled and minified JavaScript -->
+<!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   </body>
 </html>

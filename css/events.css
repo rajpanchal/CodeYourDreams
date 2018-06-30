@@ -13,7 +13,7 @@
 }
 
 .header{
-  font-size:50px;
+  font-size:40px;
   font-weight: bold;
   font-family: Futura;
 
@@ -32,7 +32,7 @@
     font-size:20px;
   }
   .header{
-    font-size: 40px;
+    font-size: 30px;
 
   }
   .heading{
@@ -124,14 +124,11 @@
 .closebtn:hover{
   color:#000000;
 }
-.slick-dots{
-  text-align:center;
-}
 .eventinfo{
   position: relative;
   display: none;
 }
-.col{
+.coll{
   width:50%;
   margin: 0px;
   height:500px;
@@ -146,7 +143,7 @@
   float:left;
 }
 #eventinfoheader{
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   font-family: Futura;
   border-bottom-color:#FFE808 ;
@@ -158,7 +155,7 @@
   padding-bottom: 5px;
 }
 #eventinfobody{
-  height:75%;
+  height:80%;
   font-size: 20px;
   overflow-y: scroll;
   margin-left: 10px;
@@ -171,7 +168,8 @@
     display: none;
     width:100%;
     }
-  .col{
+  .coll{
+    height:400px;
     width:100%;
   }
   #eventinfoheader{
@@ -179,9 +177,6 @@
   }
   #eventinfobody{
     font-size:20px;
-  }
-  .col{
-    height:400px;
   }
 }
 /* .blog{
