@@ -21,7 +21,7 @@
     <!--NATIVES-->
     <link rel="stylesheet" href="css/events.css">
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -36,6 +36,7 @@
           *{
             box-sizing: border-box;
           }
+
 
           .nav-wrapper{
             background-color: #FFE808;
@@ -63,59 +64,99 @@
           .okok{
               min-height: 0px;
           }
-            body {
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-            }
-
-            ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
+          .footer-wrapper{
+            background-color: #333333;
+            clear: both;
+            position: relative;
+            z-index: 10;
+            height: 150px;
+            margin-top: -3em;
+          }
+          body {
+              margin: 0;
+              padding: 0;
+              overflow-x: hidden;
+          }
+          * {
+              box-sizing: border-box
           }
 
-          li {
-            float: left;
-          }
-          li:nth-last-child(1){
-            float: right;
+          .footer-wrapper {
+          	color: white;
           }
 
-          li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+          footer {
+
           }
-          .middle_ware{
-            margin-top: 18px;
+          footer a img {
+          	max-width: 45px;
           }
-          .margin_middle{
-            margin-left: 21.6%;
+          .footer-link-container {
+          	text-align: center;
           }
-          .balance_acmw{
-            margin-top: 5px;
+          .social-links-1{
+          	text-align: center;
           }
-          .footer{
-            margin-top: 10%;
+          .social-links-1 a {
+          	padding-right: 10px;
+          }
+          #acm-footer-img {
+          	width: 100px;
+            height: 80px;
+          }
+          #acm-footer-img-2{
+          	width: 150px;
+            height: 80px;
+            margin-bottom: -10px;
           }
 
-          @media only screen
-          and (max-device-width: 1000px)
-          {
-            .margin_middle
-              {
-                margin-left:11%;
+          #vit-footer-img {
+          	width: 100px;
+
+          }
+
+          @media (min-width: 28em) {
+          	#acm-footer-img {
+          		width: 200px;
+          	}
+          	#vit-footer-img {
+          		width: 200px !important;
+          		top: 20px;
+          	}
+          }
+
+          @media only screen and (max-width: 600px) {
+            #acm-footer-img {
+              height: 42px;
+              width: 100px;
+          	}
+              #acm-footer-img-2{
+                height: 40px;
+                width: 68px;
               }
-              .footer{
-                margin-top: 33%;
+              .footer-logo-div{
+                padding-top: 40px;
+              }
+              .social-links-1{
+                padding-top: 10px;
               }
           }
-        </style>
+
+          .footer-wrapper {
+              padding-top: 0.5%;
+          }
+
+          .footer-center-div{
+              width: 60%;
+              margin-left: auto;
+              margin-right: auto;
+          }
+
+          .all-social-logos img {
+              width: 60px;
+          }
+
+          </style>
 
   <body>
 
@@ -185,27 +226,28 @@
     </div>
   </div>
 
-<!-- FOOTER -->
-<div class="footer">
-  <ul class="big">
-    <li><a><img src="img/acmlogo1.png" height="60px" width="140px"></a></li>
-    <li class="balance_acmw"><a><img src="img/C2C Theme and Logo-13 (1).png"  height="60px" width="100px"> </a></li>
 
-    <li class="middle_ware margin_middle">
-      <a href="https://twitter.com/ACM_VIT" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" target="_blank"><img src="img/tweet_f.png" height="23px" width="25px" alt="ACM VIT"></a>
-    </li>
+  <div class="footer-wrapper #424242">
+    <footer>
+    <div class="footer-link-container">
+      <p></p>
+      <div class="social-links-1">
 
-    <li class="middle_ware">
-      <a href="https://www.facebook.com/ACM.VITU/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" target="_blank"><img src="img/fb_f.png" height="25px" width="17px" alt="ACM VIT" ></a>
-    </li>
+        <a href="https://twitter.com/ACM_VIT" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" target="_blank"><img src="img/tweet_f.png" alt="ACM VIT"></a>
 
-    <li class="middle_ware"><a href="https://www.instagram.com/acmvitu/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" target="_blank"><img src="img/Insta_f.png" height="25px" width="25px" alt="ACM VIT"></a>
-    </li>
-    <li><a class="right_m"><img src="img/vitlogo1.png" height="60px" width="140px"></a></li>
-  </ul>
+        <a href="https://www.facebook.com/ACM.VITU/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" target="_blank"><img src="img/fb_f.png" alt="ACM VIT" ></a>
 
-</div>
+        <a href="https://www.instagram.com/acmvitu/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" target="_blank"><img src="img/Insta_f.png" alt="ACM VIT"></a>
 
+      </div>
+    </div>
+      <div class="footer-logo-div">
+        <img src="img/acmlogo1.png " alt="ACM-VIT" id="acm-footer-img">
+        <img src="img/C2C Theme and Logo-13 (1).png" alt="ACM-W" id="acm-footer-img-2">
+        <img src="img/vitlogo1.png " alt="VIT" style="float: right;" id="vit-footer-img" >
+      </div>
+    </footer>
+  </div>
 
   <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
