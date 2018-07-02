@@ -8,6 +8,7 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
@@ -156,13 +157,181 @@
               width: 60px;
           }
 
-          </style>
+      .image{
+        width:100%;
+        height:420px;
+        object-fit: cover;
+      }
+      .gg{
+        margin-bottom:30px;
+      }
+      .contact_us_1{
+        padding-top: 5px;
+        height:420px;
+        position: relative;
+        background-color: lightgrey;
+        padding-bottom: -5px;
+      }
+      .photo{
+        background-color: blue;
+      }
+      .button_submit_cont_us{
+        position: absolute;
+        bottom:0;
+        right:0;
+      }
+      .btn_cont_us{
+        background: #0000FF;
+        padding-left: 39px;
+        padding-right: 39px;
+        border-bottom: 1.5px #FFE808 solid;
+      }
+      .form_cont{
+        height: 25.95em;
+      }
+      .photo_cont_us{
+        height:100%;
+      }
+      @media only screen and (max-width: 768px) {
+
+        .contact_us_1{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .photo_cont_us{
+        padding:0;
+      }
+
+      }
+      .head-image{
+        height:100vh;
+        width:100%;
+        object-fit: cover;
+      }
+      .head{
+        position: absolute;
+        width: 100%;
+        padding:0;
+        height:100vh;
+        top:0;
+        left:0;
+        background-color: rgba(0,0,0,0.4);
+      }
+      .head-section{
+        padding:0;
+        position: relative;
+      }
+      .head-line{
+        position: absolute;
+        top:30%;
+        font-weight: bold;
+        font-style: Futura;
+        left:10%;
+        font-size: 50px;
+        text-align: left;
+        color: #FFFFFF;
+      }
+      .head-button{
+        border-bottom-color: #FFE808;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width:200px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:10px;
+        height:60px;
+        background-color: #0000FF;
+      }
+      @media only screen and (max-width: 670px) {
+        .head-line{
+          top:50%;
+          font-size:40px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .head-line{
+          font-size:30px;
+        }
+        .head-button{
+          width:150px;
+        }
+      }
+
+      .head-image{
+        height:100vh;
+        width:100%;
+        object-fit: cover;
+      }
+      .head{
+        position: absolute;
+        width: 100%;
+        padding:0;
+        height:100vh;
+        top:0;
+        left:0;
+        background-color: rgba(0,0,0,0.4);
+      }
+      .head-section{
+        padding:0;
+        position: relative;
+      }
+      .head-line{
+        position: absolute;
+        top:30%;
+        font-weight: bold;
+        font-style: Futura;
+        left:10%;
+        font-size: 50px;
+        text-align: left;
+        color: #FFFFFF;
+      }
+      .head-button{
+        border-bottom-color: #FFE808;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width:200px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:10px;
+        height:60px;
+        background-color: #0000FF;
+      }
+      @media only screen and (max-width: 670px) {
+        .head-line{
+          top:50%;
+          font-size:40px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .head-line{
+          font-size:30px;
+        }
+        .head-button{
+          width:150px;
+        }
+      }
+    </style>
 
   <body>
 
-
-
-
+    <div class="section_1 container-fluid head-section">
+      <img src="home.jpg" class="head-image">
+      <div class="head">
+        <div class="head-line">BE A PART OF <br>OUR MISSION
+          <br>
+          <div class="waves-effect waves-light btn head-button">JOIN US</div>
+        </div>
+         
+      </div>
+    </div>
+  
+    <br>
+    <br>
+  
   <div class="section_3 section container-fluid">
     <div class="desc col-lg-10 col-md-10 col-sm-10 col-xl-10 col-12" style="margin:auto;">
       <span class="animated fadeIn header hvr-underline-from-center">SO FAR</span>
@@ -225,7 +394,47 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <div class="contact_us container-fluid">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xl-10 col-12 contact_container" style="margin:auto;">
+       <span class="animated fadeIn header hvr-underline-from-center">CONTACT US</span>
+    </div>
+    <br>
+    <br>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xl-10 col-12" style="margin:auto;">
+    <div class="contact_us_1 col-lg-6 col-md-6 col-sm-12 col-xl-6 col-12" style="float:left;">
+      <div class="container">
+          <form class="form_cont">
+            <div class="input-field gg">
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field gg">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field gg">
+                <input id="phoneno" type="text" class="validate">
+                <label for="phoneno">Phone No.</label>
+            </div>
+            <div class="input-field gg">
+                <input id="text" type="text" class="validate">
+                <label for="email">Message</label>
+            </div>
+          </form>
+      </div>
+      <br>
+      <div class="button_submit_cont_us">
+        <a class="waves-effect waves-light btn btn_cont_us" style="color:white;">SUBMIT</a>
+      </div>
+    </div>
 
+    <div class="photo_cont_us col-lg-6 col-md-6 col-sm-12 col-xl-6 col-12" style="float:left;">
+      <img src="cu.png" class="image">
+    </div>
+  </div>
+</div>
 
   <div class="footer-wrapper #424242">
     <footer>
