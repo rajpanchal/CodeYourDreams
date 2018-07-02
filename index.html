@@ -36,7 +36,7 @@
           *{
             box-sizing: border-box;
           }
-
+          
           .nav-wrapper{
             background-color: #FFE808;
             height: 18%;
@@ -161,10 +161,76 @@
       }
 
       }
-        </style>
+      .head-image{
+        height:100vh;
+        width:100%;
+        object-fit: cover;
+      }
+      .head{
+        position: absolute;
+        width: 100%;
+        padding:0;
+        height:100vh;
+        top:0;
+        left:0;
+        background-color: rgba(0,0,0,0.4);
+      }
+      .head-section{
+        padding:0;
+        position: relative;
+      }
+      .head-line{
+        position: absolute;
+        top:30%;
+        font-weight: bold;
+        font-style: Futura;
+        left:10%;
+        font-size: 50px;
+        text-align: left;
+        color: #FFFFFF;
+      }
+      .head-button{
+        border-bottom-color: #FFE808;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width:200px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:10px;
+        height:60px;
+        background-color: #0000FF;
+      }
+      @media only screen and (max-width: 670px) {
+        .head-line{
+          top:50%;
+          font-size:40px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .head-line{
+          font-size:30px;
+        }
+        .head-button{
+          width:150px;
+        }
+      }
+
+    </style>
 
   <body>
 
+  <div class="section_1 container-fluid head-section">
+    <img src="home.jpg" class="head-image">
+    <div class="head">
+      <div class="head-line">BE A PART OF <br>OUR MISSION
+        <br>
+        <div class="waves-effect waves-light btn head-button">JOIN US</div>
+      </div>
+       
+    </div>
+  </div>
 
 
 
