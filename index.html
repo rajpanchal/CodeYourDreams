@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width;initial-scale=1.0">
     <!--BS3-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -21,6 +22,7 @@
     <link href="css/hover-min.css" rel="stylesheet">
     <!--NATIVES-->
     <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Import Google Icon Font-->
@@ -34,311 +36,57 @@
     <title>CodeYourDreams</title>
     </head>
         <style media="screen">
-          *{
-            box-sizing: border-box;
-          }
-
-
-          .nav-wrapper{
-            background-color: #FFE808;
-            height: 18%;
-          }
-          .colorblue{
-            color: #0000FF;
-            font-weight: bold;
-            font-size: 13px;
-          }
-          .balanced{
-            height:65px;
-            width:59px;
-          }
-          .paddlef{
-            padding-left: 26px;
-          }
-          .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-          }
-          a.icon {
-            display: none;
-          }
-          .okok{
-              min-height: 0px;
-          }
-          .footer-wrapper{
-            background-color: #333333;
-            clear: both;
-            position: relative;
-            z-index: 10;
-            height: 165px;
-            margin-top: -3em;
-          }
-          body {
-              margin: 0;
-              padding: 0;
-              overflow-x: hidden;
-          }
-          * {
-              box-sizing: border-box
-          }
-
-          .footer-wrapper {
-          	color: white;
-          }
-
-          footer {
-
-          }
-          footer a img {
-          	max-width: 45px;
-          }
-          .footer-link-container {
-          	text-align: center;
-          }
-          .social-links-1{
-          	text-align: center;
-          }
-          .social-links-1 a {
-          	padding-right: 10px;
-          }
-          #acm-footer-img {
-          	width: 100px;
-            height: 80px;
-          }
-          #acm-footer-img-2{
-          	width: 150px;
-            height: 80px;
-            margin-bottom: -10px;
-          }
-
-          #vit-footer-img {
-          	width: 100px;
-
-          }
-
-          @media (min-width: 28em) {
-          	#acm-footer-img {
-          		width: 200px;
-          	}
-          	#vit-footer-img {
-          		width: 200px !important;
-          		top: 20px;
-          	}
-          }
-
-          @media only screen and (max-width: 600px) {
-            #acm-footer-img {
-              height: 42px;
-              width: 100px;
-          	}
-              #acm-footer-img-2{
-                height: 40px;
-                width: 68px;
-              }
-              .footer-logo-div{
-                padding-top: 40px;
-              }
-              .social-links-1{
-                padding-top: 10px;
-              }
-          }
-
-          .footer-wrapper {
-              padding-top:
-          }
-
-          .footer-center-div{
-              width: 60%;
-              margin-left: auto;
-              margin-right: auto;
-          }
-
-          .all-social-logos img {
-              width: 60px;
-          }
-
-      .image{
-        width:100%;
-        height:420px;
-        object-fit: cover;
-      }
-      .gg{
-        margin-bottom:30px;
-      }
-      .contact_us_1{
-        padding-top: 5px;
-        height:420px;
-        position: relative;
-        background-color: lightgrey;
-        padding-bottom: -5px;
-      }
-      .photo{
-        background-color: blue;
-      }
-      .button_submit_cont_us{
-        position: absolute;
-        bottom:0;
-        right:0;
+        .head-button{
+        border-bottom-color: #FFE808;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width:200px;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:10px;
+        height:60px;
+        background-color: #0000FF;
       }
       .btn_cont_us{
-        background: #0000FF;
-        padding-left: 39px;
-        padding-right: 39px;
-        border-bottom: 1.5px #FFE808 solid;
-      }
-      .form_cont{
-        height: 25.95em;
-      }
-      .photo_cont_us{
-        height:100%;
-      }
-      @media only screen and (max-width: 768px) {
-
-        .contact_us_1{
-          width: 100%;
-          margin-bottom: 10px;
-        }
-        .photo_cont_us{
-        padding:0;
-      }
-
-      }
-      .head-image{
-        height:100vh;
-        width:100%;
-        object-fit: cover;
-      }
-      .head{
-        position: absolute;
-        width: 100%;
-        padding:0;
-        height:100vh;
-        top:0;
-        left:0;
-        background-color: rgba(0,0,0,0.4);
-      }
-      .head-section{
-        padding:0;
-        position: relative;
-      }
-      .head-line{
-        position: absolute;
-        top:30%;
-        font-weight: bold;
-        font-style: Futura;
-        left:10%;
-        font-size: 50px;
-        text-align: left;
-        color: #FFFFFF;
-      }
-      .head-button{
-        border-bottom-color: #FFE808;
-        border-bottom-style: solid;
-        border-bottom-width: 3px;
-        width:200px;
-        color: #FFFFFF;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        padding-top:10px;
-        height:60px;
-        background-color: #0000FF;
-      }
-      @media only screen and (max-width: 670px) {
-        .head-line{
-          top:50%;
-          font-size:40px;
-        }
-      }
-      @media only screen and (max-width: 500px) {
-        .head-line{
-          font-size:30px;
-        }
-        .head-button{
-          width:150px;
-        }
-      }
-
-      .head-image{
-        height:100vh;
-        width:100%;
-        object-fit: cover;
-      }
-      .head{
-        position: absolute;
-        width: 100%;
-        padding:0;
-        height:100vh;
-        top:0;
-        left:0;
-        background-color: rgba(0,0,0,0.4);
-      }
-      .head-section{
-        padding:0;
-        position: relative;
-      }
-      .head-line{
-        position: absolute;
-        top:30%;
-        font-weight: bold;
-        font-style: Futura;
-        left:10%;
-        font-size: 50px;
-        text-align: left;
-        color: #FFFFFF;
-      }
-      .head-button{
-        border-bottom-color: #FFE808;
-        border-bottom-style: solid;
-        border-bottom-width: 3px;
-        width:200px;
-        color: #FFFFFF;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        padding-top:10px;
-        height:60px;
-        background-color: #0000FF;
-      }
-      @media only screen and (max-width: 670px) {
-        .head-line{
-          top:45%;
-          font-size:40px;
-        }
-      }
-      @media only screen and (max-width: 500px) {
-        .head-line{
-          font-size:30px;
-        }
-        .head-button{
-          width:150px;
-        }
-      }
-      .down{
-        position: absolute;
-        bottom:10px;
-        left:50%;
-        color: gray;
-        opacity:0.7;
-        font-size:40px;
-        cursor:pointer;
-      }
-      .down:hover{
-        opacity:1;
-      }
-      .section_2{
-        background-color:#f1f2f4;
+      background: #0000FF;
+      padding-left: 39px;
+      padding-right: 39px;
+      border-bottom: 1.5px #FFE808 solid;
       }
     </style>
 
   <body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo right"><img class="nav_cyd_logo" src="img/Logo.png" alt="ok"> </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+            <li><a class="colorblue" href="#about_link">ABOUT</a></li>
+            <li><a class="colorblue" href="#sofar_link">SO FAR</a></li>
+            <li><a class="colorblue" href="#">JOIN US</a></li>
+            <li><a class="colorblue" href="#contactus_link">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class="colorblue" href="#about_link">ABOUT</a></li>
+        <li><a class="colorblue" href="#sofar_link">SO FAR</a></li>
+        <li><a class="colorblue" href="#">JOIN US</a></li>
+        <li><a class="colorblue" href="#contactus_link">CONTACT US</a></li>
+      </ul>
+
+
 
     <div class="section_1 container-fluid head-section">
       <img src="home.jpg" class="head-image">
       <div class="head">
         <div class="head-line">BE A PART OF <br>OUR MISSION
           <br>
-          <div class="waves-effect waves-light btn head-button">JOIN US</div>
+          <div class="waves-effect waves-light btn head-button" id="joinus_link">JOIN US</div>
         </div>
         <div class="down">&#9660;</div>
       </div>
@@ -347,7 +95,7 @@
     <br>
     <br>
     <div class="desc col-lg-10 col-md-10 col-sm-10 col-xl-10 col-12" style="margin:auto;">
-      <span class="animated fadeIn header hvr-underline-from-center">ABOUT</span>
+      <span class="animated fadeIn header hvr-underline-from-center" id="about_link">ABOUT</span>
       <br>
       <br>
       <br>
@@ -376,7 +124,7 @@
     <br>
   <div class="section_3 section container-fluid">
     <div class="desc col-lg-10 col-md-10 col-sm-10 col-xl-10 col-12" style="margin:auto;">
-      <span class="animated fadeIn header hvr-underline-from-center">SO FAR</span>
+      <span class="animated fadeIn header hvr-underline-from-center" id="sofar_link">SO FAR</span>
       <br>
       <br>
       <div class="animated fadeInUp bodydesc ">
@@ -440,7 +188,7 @@
   <br>
   <div class="contact_us container-fluid">
     <div class="col-lg-10 col-md-10 col-sm-12 col-xl-10 col-12 contact_container" style="margin:auto;">
-       <span class="animated fadeIn header hvr-underline-from-center">CONTACT US</span>
+       <span class="animated fadeIn header hvr-underline-from-center" id="contactus_link">CONTACT US</span>
     </div>
     <br>
     <br>
@@ -506,5 +254,18 @@
 
   <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+</script>
   </body>
 </html>
